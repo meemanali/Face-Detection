@@ -1,0 +1,74 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.lgminternee.facedetectionusingfirebasemlkit'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.lgminternee.facedetectionusingfirebasemlkit"
+        minSdk 23
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildFeatures {
+        viewBinding = true
+    }
+}
+
+/*
+
+* Now firebase ml kit is a standalone library. so does not need to include firebase
+
+This API is available using either an unbundled library that must be downloaded before use or a bundled library that increases your app size. See this guide for more information on the differences between the two installation options.
+* Feature:       	Unbundled:       	                                            Bundled:
+Implementation	    Model is dynamically downloaded via Google Play Services.	    Model is statically linked to your app at build time.
+App size	        About 800 KB size increase.	                                    About 6.9 MB size increase.
+Initialization time	Might have to wait for model to download before first use.	    Model is available immediately
+
+
+* For bundling the model with your app:
+
+
+dependencies {
+  // ...
+  // Use this dependency to bundle the model with your app
+  implementation 'com.google.mlkit:face-detection:16.1.5'
+}
+For using the model in Google Play Services:
+
+
+dependencies {
+  // ...
+  // Use this dependency to use the dynamically downloaded model in Google Play Services
+  implementation 'com.google.android.gms:play-services-mlkit-face-detection:17.1.0'
+}
+
+*/
+
+dependencies {
+    implementation 'com.google.mlkit:face-detection:16.1.5'
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Face Detection Using Firebase ML kit</string>
+    <string name="image_icon">image_icon</string>
+    <string name="ok">Ok</string>
+    <string name="image_to_convert">Image to convert</string>
+    <string name="get_image">Get Image</string>
+</resources>
