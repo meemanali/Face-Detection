@@ -1,6 +1,6 @@
 # "Face Detection using Firebase ML Kit"
 
-Welcome to Face Detection using Firebase ML Kit. It's a face detection app which provides info about number of faces, face gestures, info about eyes of image given to it. Some technologies used in this project are:
+Welcome to Face Detection using Firebase ML Kit. It's a face detection app which provides info about number of faces, face gestures and info about eyes of image given to it. Some technologies used in this project are:
 
 * Firebase Machine Learning Kit
 * Supports multiple faces
