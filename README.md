@@ -2,10 +2,10 @@
 
 Welcome to Face Detection using Firebase ML Kit. It's a face detection app which provides info about number of faces, face gestures and info about eyes of image given to it. Some technologies used in this project are:
 
-* Firebase Machine Learning Kit
-* Supports multiple faces
-* Can detect face expression eg smiling
-* Slide-in, Slide-out animations
+* Firebase Machine Learning Kit.
+* Supports multiple faces.
+* Can detect face expressions like smiling.
+* Slide-in, Slide-out animations.
 
 # Preview:
 
