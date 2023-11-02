@@ -44,8 +44,6 @@ public class MainActivity extends AppCompatActivity {
         dialog.setCancelable(false);
         dialog.setContentView(R.layout.dialog);
 
-
-
         binding.btnGet.setOnClickListener(view -> {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 2);
 
@@ -58,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
 
         Button btnOk = dialog.findViewById(R.id.btnOk);
         btnOk.setOnClickListener(view -> dialog.dismiss());
-
     }
 
     @SuppressLint("SetTextI18n")
@@ -110,9 +107,8 @@ public class MainActivity extends AppCompatActivity {
                                         // If landmark detection was enabled (mouth, ears, eyes, cheeks and nose available):
 //                                        FaceLandmark leftEar = face.getLandmark(FaceLandmark.LEFT_EAR);
 //                                        if (leftEar != null) {
-//                                            PointF leftEarPos = leftEar.getPosition();
-//
-////                                            message = message.concat("\nleftEarPos = " + leftEarPos);
+//                                            PointF leftEarPos = leftEar.getPosition();                                        
+//                                            message = message.concat("\nleftEarPos = " + leftEarPos);
 //                                        }
 
                                         // If contour detection was enabled:
